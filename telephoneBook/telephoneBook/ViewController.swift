@@ -72,9 +72,9 @@ class ViewController: UIViewController, CNContactPickerDelegate{
 //        
 //    }
     
-    func contactPicker(_ picker: CNContactPickerViewController, didSelect contactProperty: CNContactProperty) {
-        print(contactProperty.value)
-    }
+//    func contactPicker(_ picker: CNContactPickerViewController, didSelect contactProperty: CNContactProperty) {
+//        print(contactProperty.value)
+//    }
     
     
     /*!
@@ -82,6 +82,14 @@ class ViewController: UIViewController, CNContactPickerDelegate{
      * @discussion These delegate methods will be invoked when the user is done selecting multiple contacts or properties.
      * Implementing one of these methods will configure the picker for multi-selection.
      */
+//    获取多个
+    func contactPicker(_ picker: CNContactPickerViewController, didSelect contacts: [CNContact]) {
+        
+    }
+    
+//
+//    optional public func contactPicker(_ picker: CNContactPickerViewController, didSelectContactProperties contactProperties: [CNContactProperty])
+    
     
 
 }
